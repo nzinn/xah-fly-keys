@@ -3250,9 +3250,25 @@ Version 2022-10-31"
        ("n z" . abort-recursive-edit)
 
        ("o" . exchange-point-and-mark)
-       ("p" . query-replace)
        ("q" . xah-cut-all-or-region)
 
+
+
+       ;; Project.el
+
+       ("p !" . project-shell-command)
+       ("p &" . project-async-shell-command)
+       ("p i" . project-dired)
+       ("p ." . project-find-file)
+       ("p t" . project-eshell)
+       ("p y" . project-find-regexp)
+       ("p b" . project-kill-buffers)
+       ("p m" . magit-project-status)
+       ("p p" . project-switch-project)
+       ("p u" . project-switch-to-buffer)
+
+
+       
        ;; roughly text replacement related
        ("r SPC" . rectangle-mark-mode)
        ("r ," . apply-macro-to-region-lines)
@@ -3388,11 +3404,11 @@ Version 2022-10-31"
        ("0" . xah-pop-local-mark-ring)
 
        ("a" . execute-extended-command)
-       ("b" . isearch-forward)
+       ("b" . consult-line)
        ("c" . previous-line)
        ("d" . xah-beginning-of-line-or-block)
        ;; ("e" . xah-delete-left-char-or-selection)
-       ("e" . xah-delete-backward-char-or-bracket-text)
+       ("e" . delete-forward-char)
        ("f" . undo)
        ("g" . backward-word)
        ("h" . backward-char)
@@ -3403,7 +3419,7 @@ Version 2022-10-31"
        ("l" . xah-insert-space-before)
        ("m" . xah-backward-left-bracket)
        ("n" . forward-char)
-       ("o" . open-line)
+       ("o" . delete-backward-char)
        ("p" . kill-word)
        ("q" . xah-cut-line-or-region)
        ("r" . forward-word)
