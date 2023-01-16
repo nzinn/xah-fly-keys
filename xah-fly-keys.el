@@ -3112,14 +3112,7 @@ Version 2022-10-31"
        ("TAB 0" . expand-jump-to-next-slot)
        ("TAB =" . expand-jump-to-previous-slot)
 
-       (". ." . highlight-symbol-at-point)
-       (". g" . unhighlight-regexp)
-       (". c" . highlight-lines-matching-regexp)
-       (". h" . highlight-regexp)
-       (". t" . highlight-phrase)
-       (". e" . isearch-forward-symbol-at-point)
-       (". u" . isearch-forward-symbol)
-       (". p" . isearch-forward-word)
+       ("." . flatpak-run-program)
 
        ("'" . xah-fill-or-unfill)
 
