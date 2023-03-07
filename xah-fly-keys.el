@@ -3412,7 +3412,7 @@ Version 2022-10-31"
        ("l" . xah-insert-space-before)
        ("m" . xah-backward-left-bracket)
        ("n" . forward-char)
-       ("o" . lispy-delete-backward)
+       ("o" . delete-backward-char)
        ("p" . kill-word)
        ("q" . xah-cut-line-or-region)
        ("r" . forward-word)
