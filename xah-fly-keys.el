@@ -3319,7 +3319,7 @@ Version 2022-10-31"
        ("t x" . xah-reformat-to-sentence-lines)
        ("t y" . delete-duplicate-lines)
 
-       ("u" . switch-to-buffer)
+       ("u" . exwm-workspace-switch-to-buffer)
 
        ;; dangerous map. run program, delete file, etc
        ("w d" . xah-delete-current-file-make-backup)
