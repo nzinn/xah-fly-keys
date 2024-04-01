@@ -3204,7 +3204,7 @@ Version 2022-10-31"
        ("j" . xah-copy-all-or-region)
 
        ("l" . recenter-top-bottom)
-       ("m" . dired-jump)
+       ("m" . embark-act)
 
        ;; dvorak n. commands here are “harmless”, they don't modify text etc. they turn on modes, change display, prompt, start shell, etc.
        ("n SPC" . whitespace-mode)
