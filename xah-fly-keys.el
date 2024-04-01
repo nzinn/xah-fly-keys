@@ -3130,7 +3130,7 @@ Version 2022-10-31"
 
        ("9" . ispell-word)
 
-       ("a" . mark-whole-buffer)
+       ("a" . avy-goto-char-timer)
        ("b" . end-of-buffer)
 
        ("c ," . xah-open-in-external-app)
