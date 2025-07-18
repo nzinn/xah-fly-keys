@@ -3259,7 +3259,7 @@ Version 2022-10-31"
        ("p m" . magit-project-status)
        ("p p" . project-switch-project)
        ("p u" . project-switch-to-buffer)
-       ("p c" . project-compile)
+       ("p j" . project-compile)
 
 
        
