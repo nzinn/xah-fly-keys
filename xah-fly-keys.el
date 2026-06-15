@@ -3319,10 +3319,10 @@ Version 2022-10-31"
        ("t w" . xah-next-window-or-frame)
        ("t x" . xah-reformat-to-sentence-lines)
        ("t y" . delete-duplicate-lines)
+       ("u" . switch-to-buffer)
 
-       ,@(if (feature-p 'exwm) '("u" . exwm-workspace-switch-to-buffer) '("u" . switch-to-buffer))
+	;; dangerous map. run program, delete file, etc
 
-       ;; dangerous map. run program, delete file, etc
        ("w d" . xah-delete-current-file-make-backup)
        ("w ." . eval-buffer)
        ("w e" . eval-defun)
