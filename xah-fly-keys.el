@@ -3087,7 +3087,7 @@ Version 2022-10-31"
 
     (xah-fly--define-keys
      (define-prefix-command 'xah-fly-leader-key-map)
-     '(("SPC" . xah-fly-insert-mode-activate)
+     `(("SPC" . xah-fly-insert-mode-activate)
        ("RET" . execute-extended-command)
 
        ;; This keymap I've not used. things are here experimentally.
@@ -3320,7 +3320,7 @@ Version 2022-10-31"
        ("t x" . xah-reformat-to-sentence-lines)
        ("t y" . delete-duplicate-lines)
 
-       ("u" . exwm-workspace-switch-to-buffer)
+       ,@(if (feature-p 'exwm) '("u" . exwm-workspace-switch-to-buffer) '("u" . switch-to-buffer))
 
        ;; dangerous map. run program, delete file, etc
        ("w d" . xah-delete-current-file-make-backup)
